@@ -1,0 +1,92 @@
+
+.Header_Designer{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.bloco{
+    width: 50vw;
+    height: 80px;
+
+    padding: 2%;
+
+    background-color: blueviolet;
+}
+.bloco1{
+    animation: ani1 2s linear;
+    border-radius: 0px 100% 0px 0%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.bloco1 a{
+
+    margin-top: 6%;
+    font-size: 20px;
+    color: white;
+
+    padding: 2%;
+    border-radius: 10px;
+
+    animation: menu 3s linear;
+    opacity: 1;
+}
+.bloco1 a:hover{
+    background-color: rgba(255, 255, 255, 0.295);
+}
+@keyframes menu{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes ani1{
+    from{
+        border-radius: 0px 0px 0px 0%;
+    }
+    to{
+        border-radius: 0px 100% 0px 0%;
+    }
+}
+
+.bloco2{
+    animation: ani2 2s linear;
+    border-radius: 0px 0px 0px 100%;
+}
+@keyframes ani2{
+    from{
+        border-radius: 0px 0px 0px 0%;
+    }
+    to{
+        border-radius: 0px 0px 0px 100%;
+    }
+}
+
+.bola{
+    position: absolute;
+    left: 48.5%;
+    top: 44%;
+    z-index: 1;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: black;
+    border: solid 4px blueviolet;
+    border-radius: 100%;
+
+    animation: bola_move 2s linear;
+}
+@keyframes bola_move{
+    from{
+        width: 5px;
+        height: 5px;
+    }
+    to{
+        width: 20px;
+        height: 20px;
+    }
+}
